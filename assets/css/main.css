@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+body {
+	background-color: #d8e9f3;
+	font-family: Rubik
+}
+
+.intro {
+	margin: 40px 0 40px 0;
+	text-align: center
+}
+
+.intro a {color: #ff9800}
+
+h1 {text-align: center}
+
+.container {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+	background-color: #fff
+}
+
+.nom {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold
+}
+
+.description {
+	display: block;
+	margin-bottom: 10px
+}
+
+.carte {height: 200px}
+.photo {
+	max-width: 100%;
+	height: 200px;
+	border-radius: 6px
+}
+
+footer {
+	padding: 20px 0;
+	text-align: center
+}
+
+footer a {
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	z-index: 1
+}
+footer a:hover {color: #d8e9f3}
+footer a::before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	position: absolute;
+	background-color: #000;
+	transition-duration: 0.3s;
+	z-index: -1
+}
+footer a:hover::before {height: 100%}
+
+.copyright {
+	padding-top: 20px;
+	opacity: 0.65;
+	font-size: 12px
+}
+
+/* 600px max */
+@media screen and (max-width: 600px) {
+	h1 {font-size: 29px}
+}
+
+/* 480px max */
+@media screen and (max-width: 480px) {
+	h1 {font-size: 26px}
+}
